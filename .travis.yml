@@ -1,6 +1,9 @@
 language: ruby
 rvm:
   - 2.5.1
+addons:
+  hosts:
+    - api.ingressdev.test
 before_script:
   - gem install bundler-audit
 script:
