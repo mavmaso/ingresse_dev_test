@@ -1,25 +1,40 @@
-# README
+ingresse_dev_test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+=======
 
-Things you may want to cover:
 
-* Ruby version
+**Ingress_dev_test** é uma aplicação feita para 
 
-* System dependencies
+resolver o desafio propospo, https://gist.github.com/vitorleal/158e4e3870337dacf9475a5a27e5c7c9, da melhor maneira possivel.
 
-* Configuration
 
-* Database creation
+## Setup do Projeto
 
-* Database initialization
+### 
+Pré requisitos
 
-* How to run the test suite
+ - Ter [Ruby](https://www.ruby-lang.org) versão 2.5.1 previamente instalado na máquina
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
-# ingresse_dev_test
+### Configurando e executando testes
+
+ 
+- `bin/setup`
+ 
+- `bundle exec rspec`
+
+
+
+### Executando a aplicação
+
+
+Após os passos de configuração executar o comando `rails server` e acessar pela
+url [http://http://api.ingress-dev.test:3000//](http://http://api.ingress-dev.test:3000//).
+
+
+
+
+### Principais contribuidores
+ 
+[mavmaso](https://github.com/mavmaso)
