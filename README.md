@@ -3,7 +3,7 @@
 =======
 
 **Ingress_dev_test** é uma aplicação feita para resolver o desafio 
-propospo, https://gist.github.com/vitorleal/158e4e3870337dacf9475a5a27e5c7c9, da melhor 
+proposto, https://gist.github.com/vitorleal/158e4e3870337dacf9475a5a27e5c7c9, da melhor 
 maneira possivel.
 
 
@@ -25,7 +25,7 @@ Pré requisitos
 ### Executando a aplicação
 
 Após os passos de configuração executar o comando `rails server` e acessar pela
-url [http://api.ingress-dev.test:3000//](http://http://api.ingress-dev.test:3000//).
+url [http://api.ingress-dev.test:3000//](http://http://api.ingress-dev.test:3000//), para consumir a api.
 
 
 ### Principais contribuidores
