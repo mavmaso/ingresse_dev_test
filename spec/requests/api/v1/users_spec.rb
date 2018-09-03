@@ -10,7 +10,7 @@ RSpec.describe 'Users Api', type: :request do
     }
   end
 
-  before { host! "api.ingressdev.test" }
+  before { host! 'api.ingressdev.test' }
 
   describe 'GET users/:id' do
     before do
@@ -54,7 +54,7 @@ RSpec.describe 'Users Api', type: :request do
     end
 
     context 'when the request params are invalid' do
-      let(:user_params) { attributes_for(:user, email: 'invalid_email@')}
+      let(:user_params) { attributes_for(:user, email: 'invalid_email@') }
 
       it 'return status code 422' do
         expect(response).to have_http_status(422)
@@ -72,7 +72,7 @@ RSpec.describe 'Users Api', type: :request do
     end
 
     context 'when the request params are valid' do
-      let(:user_params) { {email: 'neo@ingressdev.com'} }
+      let(:user_params) { { email: 'neo@ingressdev.com' } }
 
       it 'return status code 200' do
         expect(response).to have_http_status(200)
@@ -84,7 +84,7 @@ RSpec.describe 'Users Api', type: :request do
     end
 
     context 'when the request params are invalid' do
-      let(:user_params) { {email: 'invalidmail@'} }
+      let(:user_params) { { email: 'invalidmail@' } }
 
       it 'return status code 422' do
         expect(response).to have_http_status(422)
@@ -100,13 +100,13 @@ RSpec.describe 'Users Api', type: :request do
     before do
       delete "/users/#{user_id}", params: {}, headers: headers
     end
-    
-    it 'returns status code 204'do
+
+    it 'returns status code 204' do
       expect(response).to have_http_status(204)
     end
 
     it 'removes the user from database' do
-      expect( User.find_by(id: user.id) ).to be_nil
+      expect(User.find_by(id: user.id)).to be_nil
     end
   end
 end

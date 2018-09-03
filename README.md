@@ -21,6 +21,12 @@ Pré requisitos
  
 - `bundle exec rspec`
 
+#### Docker
+ - `docker-compose build`
+ - `docker-compose run --rm web bin/setup`
+ - `docker-compose run --rm --service-ports web bash`
+ - `bundle exec rspec`
+
 
 ### Executando a aplicação
 
