@@ -1,12 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe 'Users Api', type: :request do
-  let!(:user) {create(:user)}
+  let!(:user) { create(:user) }
   let(:user_id) { user.id }
   let(:headers) do
     {
       'Accept' => 'application/vnd.ingressdev.v1',
-      #Content-Type' => Mime[:json].to_s
+      # Content-Type' => Mime[:json].to_s
     }
   end
 
@@ -30,7 +30,7 @@ RSpec.describe 'Users Api', type: :request do
 
     context 'when the user does not exist' do
       let(:user_id) { 1000 }
-      
+
       it 'returns status code 404' do
         expect(response).to have_http_status(404)
       end
