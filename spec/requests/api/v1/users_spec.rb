@@ -5,8 +5,7 @@ RSpec.describe 'Users Api', type: :request do
   let(:user_id) { user.id }
   let(:headers) do
     {
-      'Accept' => 'application/vnd.ingressdev.v1',
-      # Content-Type' => Mime[:json].to_s
+      'Accept' => 'application/vnd.ingressdev.v1'
     }
   end
 
