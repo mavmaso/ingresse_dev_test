@@ -25,8 +25,7 @@ Pré requisitos
 ### Executando a aplicação
 
 Após os passos de configuração executar o comando `rails server` e acessar pela
-url [http://api.ingress-dev.test:3000//](http://http://api.ingress-dev.test:3000//), para consumir a api.
-
+url [http://api.ingress-dev.test:3000//](http://http://api.ingress-dev.test:3000//), ou para consumir a api diretamente, por exemplo com: curl -v http://127.0.0.1:3000/users/1 
 
 ### Principais contribuidores
  
